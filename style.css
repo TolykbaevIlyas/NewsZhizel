@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "ActayWide"; 
+    // адрес шрифта и тип 
+    src: url("./assets/ActayWide-Bold.otf") format("opentype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+  @font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Rostov"; 
+    // адрес шрифта и тип 
+    src: url("./assets/ofont.ru_Rostov.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  @font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Faberge"; 
+    // адрес шрифта и тип 
+    src: url("./assets/Faberge-Regular.otf") format("opentype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+  @font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Bluu"; 
+    // адрес шрифта и тип 
+    src: url("./assets/Bluu Next Cyrillic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+
+
+.container{
+    max-width: 1580px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: "ActayWide" , sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    color: #444;
+}
+header{
+    height: 50px;
+    box-shadow: 6px 23px 42px 0px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.main{
+    z-index: 9;
+    background-image: url("./assets/bg.png");
+    width: 98,2vw; /* 100% ширины экрана */
+    height: 130vh; /* 100% высоты экрана */
+    background-size: 100% 100%; /* Растягивает изображение по ширине и высоте блока */
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: relative;
+    z-index: 999;
+    top:0;
+    left: 0; */
+}
+
+.main-text{
+    position:absolute;
+    right: 0;
+    padding-top: 50px;
+    max-width: 930px;
+}
+
+.title{
+    font-family: "Rostov", sans-serif;
+    text-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.description{
+    margin-top: 20px;
+    font-family: "Faberge", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #bff054;
+    max-width: 700px;   
+}
+
+.info{
+    margin: 0 auto;
+}
+
+.text{
+    margin: 0 auto;
+    max-width: 700px;
+    font-family: "Bluu", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #404040;
+}
+
+.diagrammFirst{
+    margin:20px auto;
+    max-width: 607px;
+    height: 404px;
+    text-align: center;
+    align-items:center
+}
+
+.diagrammFirst img{
+    max-width: 607px;
+    height: 404px;
+}
+
+.citat{
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 700px;
+    height: 50px;
+    background: #bff054;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center
+}
+
+@media screen and (max-width: 1040px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 110vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 50px;
+        max-width: 600px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 40px;
+    }
+    
+    .description{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 300px;  
+    }
+    .text{
+        max-width: 600px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 607px;
+        height: 404px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 607px;
+        height: 404px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 600px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 80vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 50px;
+        max-width: 400px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 40px;
+    }
+    
+    .description{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        max-width: 300px;  
+    }
+    .text{
+        max-width: 500px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 507px;
+        height: 304px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 507px;
+        height: 304px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 500px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 70vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 50px;
+        max-width: 350px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 30px;
+    }
+    
+    .description{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 13px;
+        max-width: 250px;  
+    }
+    .text{
+        max-width: 500px;
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 507px;
+        height: 304px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 507px;
+        height: 304px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 500px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 55vh; /* 100% высоты экрана */
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 50px;
+        max-width: 250px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .description{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 12px;
+        max-width: 200px;  
+    }
+    .text{
+        max-width: 400px;
+        font-weight: 600;
+        font-size: 11px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 400px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 45vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 50px;
+        max-width: 200px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .description{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 12px;
+        max-width: 200px;  
+    }
+    .text{
+        max-width: 300px;
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 300px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 35vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 20px;
+        max-width: 20s0px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .description{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 10px;
+        max-width: 200px;  
+    }
+    .text{
+        max-width: 300px;
+        font-weight: 600;
+        font-size: 10px;
+    }
+    .diagrammFirst{
+        margin:20px auto;
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .diagrammFirst img{
+        max-width: 407px;
+        height: 204px;
+    }
+    
+    .citat{
+        margin: 20px auto;
+        border-radius: 20px;
+        max-width: 300px;
+        height: 30px;
+    }
+}

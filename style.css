@@ -193,9 +193,9 @@ header{
 
 .diagrammPerviy{
     display:flex;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     gap:20px;
-    max-width: 90vh;
+    max-width: 500px;
 }
 
 .diagrammPerviy img{
@@ -280,6 +280,12 @@ header{
         background-position: center; /* Центрирует изображение */
         background-repeat: no-repeat; /* Без повторения */
     }
+    .diagrammPerviy{
+        margin: 0 auto;
+        margin-left: 10px;
+        max-width: 500px;
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -345,6 +351,12 @@ header{
         max-width: 500px;
         font-weight: 600;
         font-size: 10px;
+    }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 20px;
+        max-width: 400px;
+        gap: 5px;
     }
 }
 
@@ -423,6 +435,12 @@ header{
         background-position: center; /* Центрирует изображение */
         background-repeat: no-repeat; /* Без повторения */
     }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 20px;
+        max-width: 500px;
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 515px){
@@ -475,6 +493,12 @@ header{
         max-width: 400px;
         height: 30px;
     }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 10px;
+        max-width: 400px;
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -485,13 +509,14 @@ header{
     .main-text{
         position:absolute;
         right: 0;
-        padding-top: 50px;
+        padding-top: 30px;
         max-width: 200px;
     }
     
     .title{
         font-weight: 400;
         font-size: 20px;
+        font-weight: 900;
     }
     
     .description{
@@ -546,6 +571,12 @@ header{
         font-weight: 600;
         font-size: 20px;
     }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 10px;
+        max-width: 300px;
+        gap: 5px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -583,7 +614,7 @@ header{
     }
     
     .diagrammFirst img{
-        max-width: 407px;
+        max-width: 307px;
         height: 204px;
     }
     
@@ -608,5 +639,11 @@ header{
         max-width: 700px;
         font-weight: 600;
         font-size: 6px;
+    }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 5px;
+        max-width: 250px;
+        gap: 5px;
     }
 }

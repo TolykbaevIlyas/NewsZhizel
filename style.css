@@ -113,7 +113,7 @@ header{
     font-family: "Bluu", sans-serif;
     font-weight: 600;
     font-size: 20px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #404040;
 }
 
@@ -191,6 +191,20 @@ header{
     object-fit: cover; /* Масштабирует видео, сохраняя пропорции */
 }
 
+.diagrammPerviy{
+    display:flex;
+    margin: 0 auto;
+    gap:20px;
+    max-width: 90vh;
+}
+
+.diagrammPerviy img{
+    width: 60%;
+    height: 30%;
+    background-size: cover; /* Масштабирует, чтобы покрыть весь блок */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Без повторения */
+}
 @media screen and (max-width: 1040px){
     .main{
         width: 98,2vw; /* 100% ширины экрана */
@@ -251,6 +265,20 @@ header{
         max-width: 400px;
         font-weight: 600;
         font-size: 11px;
+    }
+    .diagrammPerviy{
+        display:flex;
+        margin: 0 auto;
+        gap:20px;
+        max-width: 90vh;
+    }
+    
+    .diagrammPerviy img{
+        width: 50%;
+        height: 30%;
+        background-size: cover; /* Масштабирует, чтобы покрыть весь блок */
+        background-position: center; /* Центрирует изображение */
+        background-repeat: no-repeat; /* Без повторения */
     }
 }
 
@@ -379,6 +407,21 @@ header{
         max-width: 700px;
         font-weight: 600;
         font-size: 8px;
+    }
+    .diagrammPerviy{
+        display:flex;
+        margin: 0 auto;
+        gap:20px;
+        text-align: center;
+    }
+    
+    .diagrammPerviy img{
+        margin: 0 auto;
+        width: 40%;
+        height: 30%;
+        background-size: cover; /* Масштабирует, чтобы покрыть весь блок */
+        background-position: center; /* Центрирует изображение */
+        background-repeat: no-repeat; /* Без повторения */
     }
 }
 

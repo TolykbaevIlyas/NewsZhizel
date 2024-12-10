@@ -650,6 +650,13 @@ header{
         max-width:250px;
         gap: 5px;
     }
+    .diagrammaSeconds{
+        margin:20px auto;
+        max-width: 350px;
+        height: 254px;
+        text-align: center;
+        align-items:center
+    }
 }
 
 @media screen and (max-width: 391px){
@@ -680,6 +687,13 @@ header{
         margin-left: 5px;
         max-width:250px;
         gap: 5px;
+    }
+    .diagrammaSeconds{
+        margin:20px auto;
+        max-width: 350px;
+        height: 254px;
+        text-align: center;
+        align-items:center
     }
 }
 
@@ -723,5 +737,12 @@ header{
     }
     .diagrammaSeconds img{
         max-width: 300px;
+    }
+    .diagrammaSeconds{
+        margin:20px auto;
+        max-width: 350px;
+        height: 254px;
+        text-align: center;
+        align-items:center
     }
 }

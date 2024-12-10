@@ -68,6 +68,7 @@ header{
     background-size: 100% 100%; /* Растягивает изображение по ширине и высоте блока */
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover
     /* position: relative;
     z-index: 999;
     top:0;
@@ -205,6 +206,20 @@ header{
     background-position: center; /* Центрирует изображение */
     background-repeat: no-repeat; /* Без повторения */
 }
+
+.diagrammaSeconds{
+    margin:20px auto;
+    max-width: 607px;
+    /* height: 404px; */
+    text-align: center;
+    align-items:center
+}
+
+.diagrammaSeconds img{
+    max-width: 607px;
+    height: 100%;
+}
+
 @media screen and (max-width: 1040px){
     .main{
         width: 98,2vw; /* 100% ширины экрана */
@@ -438,9 +453,22 @@ header{
     .diagrammPerviy{
         margin: 0 ;
         margin-left: 20px;
-        max-width: 500px;
+        max-width: 400px;
         gap: 5px;
     }
+    .diagrammaSeconds{
+        margin:20px auto;
+        max-width: 507px;
+        /* height: 404px; */
+        text-align: center;
+        align-items:center
+    }
+    
+    .diagrammaSeconds img{
+        max-width: 507px;
+        height: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 515px){
@@ -504,7 +532,7 @@ header{
 @media screen and (max-width: 480px){
     .main{
         width: 98,2vw; /* 100% ширины экрана */
-        height: 30vh; /* 100% высоты экрана */
+        height: 50vh; /* 100% высоты экрана */
     }
     .main-text{
         position:absolute;
@@ -577,12 +605,25 @@ header{
         max-width: 300px;
         gap: 5px;
     }
+    .diagrammaSeconds{
+        margin:20px auto;
+        max-width: 350px;
+        /* height: 404px; */
+        text-align: center;
+        align-items:center
+    }
+    
+    .diagrammaSeconds img{
+        max-width: 350px;
+        height: 100%;
+    }
+    
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 375px){
     .main{
         width: 98,2vw; /* 100% ширины экрана */
-        height: 35vh; /* 100% высоты экрана */
+        height: 50vh; /* 100% высоты экрана */
     }
     .main-text{
         position:absolute;
@@ -602,48 +643,84 @@ header{
         font-size: 10px;
         max-width: 200px;  
     }
-    .text{
-        max-width: 300px;
-        font-weight: 600;
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 5px;
+        max-width:250px;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 391px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 30vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 20px;
+        max-width: 20s0px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .description{
+        margin-top: 10px;
+        font-weight: 400;
         font-size: 10px;
-    }
-    .diagrammFirst{
-        margin:20px auto;
-        max-width: 407px;
-        height: 204px;
-    }
-    
-    .diagrammFirst img{
-        max-width: 307px;
-        height: 204px;
-    }
-    
-    .citat{
-        margin: 20px auto;
-        border-radius: 20px;
-        max-width: 300px;
-        height: 30px;
-    }
-    .diagrammTwo{
-        display: flex;
-        /* flex-direction: column; */
-        text-align: left;
-        /* max-width: 900px ; */
-    }
-
-    .diagrammTwo{
-        max-width: 600px;
-    }
-
-    .text2{
-        max-width: 700px;
-        font-weight: 600;
-        font-size: 6px;
+        max-width: 200px;  
     }
     .diagrammPerviy{
         margin: 0 ;
         margin-left: 5px;
-        max-width: 250px;
+        max-width:250px;
         gap: 5px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .main{
+        width: 98,2vw; /* 100% ширины экрана */
+        height: 40vh; /* 100% высоты экрана */
+    }
+    .main-text{
+        position:absolute;
+        right: 0;
+        padding-top: 20px;
+        max-width: 20s0px;
+    }
+    
+    .title{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .description{
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 10px;
+        max-width: 200px;  
+    }
+    .diagrammPerviy{
+        margin: 0 ;
+        margin-left: 5px;
+        max-width:250px;
+        gap: 5px;
+    }
+    .diagrammFirst{
+        max-width: 300px;
+    }
+    .diagrammFirst img{
+        max-width: 300px;
+    }
+    .diagrammaSeconds{
+        max-width:300px;
+    }
+    .diagrammaSeconds img{
+        max-width: 300px;
     }
 }

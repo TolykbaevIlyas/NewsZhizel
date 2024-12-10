@@ -210,9 +210,10 @@ header{
 .diagrammaSeconds{
     margin:20px auto;
     max-width: 607px;
-    /* height: 404px; */
+    height: 404px;
     text-align: center;
-    align-items:center
+    align-items:center;
+    /* height:100%; */
 }
 
 .diagrammaSeconds img{
@@ -608,7 +609,7 @@ header{
     .diagrammaSeconds{
         margin:20px auto;
         max-width: 350px;
-        /* height: 404px; */
+        height: 254px;
         text-align: center;
         align-items:center
     }

@@ -7,7 +7,7 @@
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "ActayWide"; 
     // адрес шрифта и тип 
-    src: url("./assets/ActayWide-Bold.otf") format("opentype"); 
+    src: url("./assets/ActayWide-Bold.otf") format("opentype"),url('./assets/ActayWide-Bold.woff') format('woff'),; 
     font-style: normal; 
     font-weight: normal; 
   } 
@@ -16,7 +16,7 @@
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "Rostov"; 
     // адрес шрифта и тип 
-    src: url("./assets/ofont.ru_Rostov.ttf") format("truetype"); 
+    src: url("./assets/ofont.ru_Rostov.ttf") format("truetype"),url("./assets/ofont.ru_Rostov.ttf") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
   } 
@@ -24,7 +24,7 @@
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "Faberge"; 
     // адрес шрифта и тип 
-    src: url("./assets/Faberge-Regular.otf") format("opentype"); 
+    src: url("./assets/Faberge-Regular.otf") format("opentype"),url("./assets/Faberge-Regular.otf") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
   } 
@@ -32,7 +32,7 @@
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "Bluu"; 
     // адрес шрифта и тип 
-    src: url("./assets/Bluu Next Cyrillic.ttf") format("truetype"); 
+    src: url("./assets/Bluu Next Cyrillic.ttf") format("truetype"),url("./assets/Bluu Next Cyrillic.ttf") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
   } 
@@ -123,7 +123,7 @@ header{
     font-family: "Bluu", sans-serif;
     font-weight: 600;
     font-size: 13px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #404040;
 }
 
@@ -480,7 +480,7 @@ header{
 @media screen and (max-width: 480px){
     .main{
         width: 98,2vw; /* 100% ширины экрана */
-        height: 45vh; /* 100% высоты экрана */
+        height: 30vh; /* 100% высоты экрана */
     }
     .main-text{
         position:absolute;
@@ -503,7 +503,7 @@ header{
     .text{
         max-width: 300px;
         font-weight: 600;
-        font-size: 10px;
+        font-size: 19px;
     }
     .diagrammFirst{
         margin:20px auto;
@@ -528,17 +528,23 @@ header{
     .diagrammTwo{
         display: flex;
         text-align: left;
+        flex-direction: column;
         /* max-width: 900px ; */
     }
 
     .diagrammTwo{
-        max-width: 600px;
+        max-width: 300px;
+        height: 100%;
+    }
+
+    .diagrammTwo img{
+        max-width: 100px;
     }
 
     .text2{
-        max-width: 700px;
+        max-width: 400px;
         font-weight: 600;
-        font-size: 6px;
+        font-size: 20px;
     }
 }
 
@@ -589,6 +595,7 @@ header{
     }
     .diagrammTwo{
         display: flex;
+        /* flex-direction: column; */
         text-align: left;
         /* max-width: 900px ; */
     }

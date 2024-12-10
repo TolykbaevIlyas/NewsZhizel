@@ -101,6 +101,9 @@ header{
 }
 
 .info{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
     margin: 0 auto;
 }
 
@@ -114,17 +117,47 @@ header{
     color: #404040;
 }
 
+.text2{
+    /* margin: 0 auto; */
+    max-width: 500px;
+    font-family: "Bluu", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: #404040;
+}
+
 .diagrammFirst{
     margin:20px auto;
     max-width: 607px;
-    height: 404px;
+    /* height: 404px; */
     text-align: center;
     align-items:center
 }
 
+/* .flex{
+    
+    gap:20px;
+} */
+
+.diagrammTwo img{
+    max-width: 500px !important;
+}
+
+.diagrammTwo{
+    display: flex;
+    text-align: left;
+    max-width: 800px ;
+}
+
+.diagrammTwo p{
+    max-width: 400px !important;
+    
+}
+
 .diagrammFirst img{
     max-width: 607px;
-    height: 404px;
+    height: 100%;
 }
 
 .citat{
@@ -137,6 +170,25 @@ header{
     display: flex;
     justify-content: center;
     align-items:center
+}
+
+.video-container {
+    margin: 0 auto;
+    position: relative;
+    width: 50%; /* Видео будет растягиваться на всю ширину родительского контейнера */
+    padding-top: 56.25%; /* Соотношение сторон 16:9 */
+    overflow: hidden;
+    background: #000; /* Добавим фон для эстетики */
+}
+
+/* Само видео */
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Масштабирует видео, сохраняя пропорции */
 }
 
 @media screen and (max-width: 1040px){
@@ -183,6 +235,22 @@ header{
         border-radius: 20px;
         max-width: 600px;
         height: 50px;
+    }
+
+    .diagrammTwo{
+        display: flex;
+        text-align: left;
+        max-width: 800px ;
+    }
+
+    .diagrammTwo{
+        max-width: 700px;
+    }
+
+    .text2{
+        max-width: 400px;
+        font-weight: 600;
+        font-size: 11px;
     }
 }
 
@@ -231,6 +299,25 @@ header{
         max-width: 500px;
         height: 50px;
     }
+    .video-container {
+        padding-top: 56.25%; /* Соотношение сторон сохраняется */
+    }
+
+    .diagrammTwo{
+        display: flex;
+        text-align: left;
+        /* max-width: 900px ; */
+    }
+
+    .diagrammTwo{
+        max-width: 600px;
+    }
+
+    .text2{
+        max-width: 500px;
+        font-weight: 600;
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 650px){
@@ -277,6 +364,21 @@ header{
         border-radius: 20px;
         max-width: 500px;
         height: 50px;
+    }
+    .diagrammTwo{
+        display: flex;
+        text-align: left;
+        /* max-width: 900px ; */
+    }
+
+    .diagrammTwo{
+        max-width: 600px;
+    }
+
+    .text2{
+        max-width: 700px;
+        font-weight: 600;
+        font-size: 8px;
     }
 }
 
@@ -377,6 +479,24 @@ header{
         max-width: 300px;
         height: 30px;
     }
+    .video-container {
+        padding-top: 56.25%;
+    }
+    .diagrammTwo{
+        display: flex;
+        text-align: left;
+        /* max-width: 900px ; */
+    }
+
+    .diagrammTwo{
+        max-width: 600px;
+    }
+
+    .text2{
+        max-width: 700px;
+        font-weight: 600;
+        font-size: 6px;
+    }
 }
 
 @media screen and (max-width: 360px){
@@ -423,5 +543,20 @@ header{
         border-radius: 20px;
         max-width: 300px;
         height: 30px;
+    }
+    .diagrammTwo{
+        display: flex;
+        text-align: left;
+        /* max-width: 900px ; */
+    }
+
+    .diagrammTwo{
+        max-width: 600px;
+    }
+
+    .text2{
+        max-width: 700px;
+        font-weight: 600;
+        font-size: 6px;
     }
 }
